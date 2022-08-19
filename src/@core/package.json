@@ -1,0 +1,38 @@
+{
+  "name": "@example/core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "imports": {
+    "#example/*": "./dist/example/*.js",
+    "#example/infra": "./dist/example/infra/index.js"
+  },
+  "exports": {
+    "./src/example/application": "./dist/example/application/index.js",
+    "./src/example/infra": "./dist/example/infra/index.js"
+  },
+  "typesVersions": {
+    ">=4.0": {
+      "example/application": [
+        "./dist/example/application/index.d.ts"
+      ],
+      "example/infra": [
+        "./dist/example/infra/index.d.ts"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cti": "cti",
+    "cti:make": "sh ./cti.sh",
+    "tsc": "tsc",
+    "build": "tsc -b ./tsconfig.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.7.4",
+    "create-ts-index": "^1.14.0"
+  }
+}
