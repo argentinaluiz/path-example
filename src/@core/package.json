@@ -8,8 +8,8 @@
     "#example/infra": "./dist/example/infra/index.js"
   },
   "exports": {
-    "./src/example/application": "./dist/example/application/index.js",
-    "./src/example/infra": "./dist/example/infra/index.js"
+    "./example/application": "./dist/example/application/index.js",
+    "./example/infra": "./dist/example/infra/index.js"
   },
   "typesVersions": {
     ">=4.0": {

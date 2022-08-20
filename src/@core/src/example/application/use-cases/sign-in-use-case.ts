@@ -1,4 +1,4 @@
-import { IExampleScraper } from "#example/infra/web-scraper/ports/IExampleScraper";
+import { IExampleScraper } from "#example/infra";
 
 export class SignInUseCase {
     constructor(
